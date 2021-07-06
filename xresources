@@ -1,0 +1,79 @@
+
+! special
+*.foreground:   #d6d0d0
+*.background:   #0e0a0a
+*.cursorColor:  #d6d0d0
+
+! black
+*.color0:       #171212
+*.color8:       #d4be47
+
+! red
+*.color1:       #211b1b
+*.color9:       #4dacad
+
+! green
+*.color2:       #352c2c
+*.color10:      #3fad5c
+
+! yellow
+*.color3:       #4f4343
+*.color11:      #f6726c
+
+! blue
+*.color4:       #71605f
+*.color12:      #34abad
+
+! magenta
+*.color5:       #988383
+*.color13:      #2ea2a4
+
+! cyan
+*.color6:       #bab0b0
+*.color14:      #58a8a9
+
+! white
+*.color7:       #e5e2e2
+*.color15:      #f87b75
+
+!! URxvt Appearance
+URxvt.font: xft:terminus:pixelsize=8
+URxvt.boldFont: xft:terminus:pixelsize=8
+URxvt.italicFont: xft:terminus:pixelsize=8
+URxvt.boldItalicfont: xft:terminus:pixelsize=8
+URxvt.letterSpace: 1
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+termbar*faceName: terminus
+termbar*geometry: 191x1+0+0
+termbar*internalBorder: 6
+termbar*saveLines: 0
+termbar*scrollBar: false
+termbar*title: termbar
+!! termbar*foreground: #
+!! termbar*background: black
+termbar*color1: #171212
+termbar*color3: white

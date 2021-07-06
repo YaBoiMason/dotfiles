@@ -1,0 +1,12 @@
+#!/usr/local/bin/zsh
+
+printf "\033[s"
+while [ 0 ] 
+do 
+	echo -n $(date)
+	echo -n " | batt $(apm -l)" 
+	echo -n " | $USER @ $(hostname)" 
+	printf "\033[u"
+	printf "\e[?25l"
+	sleep 1		
+done
